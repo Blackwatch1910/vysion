@@ -29,6 +29,8 @@ import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
 
+//document.body.style.backgroundColor = '#1b262c';
+
 ReactDOM.render(
   <BrowserRouter>
     <Switch>

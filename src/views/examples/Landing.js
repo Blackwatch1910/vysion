@@ -21,11 +21,13 @@ import classnames from "classnames";
 
 // reactstrap components
 import {
-  Badge,
   Button,
   Card,
   CardBody,
   CardImg,
+  CardText,
+  CardTitle,
+  CardSubtitle,
   FormGroup,
   Input,
   InputGroupAddon,
@@ -40,6 +42,7 @@ import {
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import CardsFooter from "components/Footers/CardsFooter.js";
+import Expertise from 'components/Expertise';
 
 // index page sections
 //import Download from "../IndexSections/Download.js";
@@ -75,8 +78,8 @@ class Landing extends React.Component {
           <div className="position-relative">
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-250">
-              <div className="shape shape-style-1 shape-dark"> 
-                <img alt="background" src={require("assets/img/theme/back.jpg")} />
+              <div className="shape shape-style-1 shape-dark">
+                <img alt="background" width="100%" height="100%" src={require("assets/img/theme/back.jpg")} />
               </div>
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
@@ -87,7 +90,7 @@ class Landing extends React.Component {
                         <span>Technologies</span>
                       </h1>
                       <p className="lead text-white">
-                        We help you to 
+                        We help you to
                       </p>
                       <div className="btn-wrapper">
                         <Button
@@ -100,33 +103,20 @@ class Landing extends React.Component {
                           </span>
                           <span className="btn-inner--text">Talk To Us</span>
                         </Button>
-    
+
                       </div>
                     </Col>
                   </Row>
                 </div>
               </Container>
-              {/* SVG separator */}
-              <div className="separator separator-bottom separator-skew">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="none"
-                  version="1.1"
-                  viewBox="0 0 2560 100"
-                  x="0"
-                  y="0"
-                >
-                  <polygon
-                    className="fill-white"
-                    points="2560 0 2560 100 0 100"
-                  />
-                </svg>
-              </div>
+
             </section>
             {/* 1st Hero Variation */}
           </div>
-          
-          <section className="section section-lg pt-lg-0 mt--200">
+
+          <Expertise />
+          {/* Blog section was here */}
+          {/* <section className="section section-lg pt-lg-0 mt--200">
             <Container>
               <Row className="justify-content-center">
                 <Col lg="12">
@@ -243,7 +233,7 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
+          </section> */}
           {/* <section className="section section-lg">
             <Container>
               <Row className="row-grid align-items-center">
@@ -498,9 +488,9 @@ class Landing extends React.Component {
           </section>
           <section className="section section-lg">
             <Container>
-            <Row className="row-grid align-items-center">
+              <Row className="row-grid align-items-center">
                 <Col className="order-lg-2 ml-lg-auto">
-                  <h1 className="text-center display-2">Our Clients</h1>
+                  <h1 className="text-center display-2">Our Products</h1>
                 </Col>
               </Row>
               <Row className="row-grid align-items-center">
@@ -784,7 +774,7 @@ class Landing extends React.Component {
                 y="0"
               >
                 <polygon
-                  className="fill-white"
+                  className="fill-white "
                   points="2560 0 2560 100 0 100"
                 />
               </svg>
@@ -865,7 +855,48 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
+          {/* Cards go here */}
+          <br />
+          <h1 className="text-center">Read our amazing blogs</h1>
+          <br />
+          <Container>
+            <Row>
+              <Col className="col-sm">
+                <Card>
+                  <CardImg top width="100%" src={require("assets/img/icons/common/google.svg")} alt="Card image cap" />
+                  <CardBody>
+                    <CardTitle>Card title</CardTitle>
+                    <CardSubtitle>Card subtitle</CardSubtitle>
+                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                    <Button color="default">Button</Button>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col className="col-sm">
+                <Card>
+                  <CardImg top width="100%" src={require("assets/img/icons/common/google.svg")} alt="Card image cap" />
+                  <CardBody>
+                    <CardTitle>Card title</CardTitle>
+                    <CardSubtitle>Card subtitle</CardSubtitle>
+                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                    <Button color="default">Button</Button>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col className="col-sm">
+                <Card>
+                  <CardImg top width="100%" src={require("assets/img/icons/common/google.svg")} alt="Card image cap" />
+                  <CardBody>
+                    <CardTitle>Card title</CardTitle>
+                    <CardSubtitle>Card subtitle</CardSubtitle>
+                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                    <Button color="default">Button</Button>
+                  </CardBody>
+                </Card>
+              </Col>
 
+            </Row>
+          </Container>
         </main>
         <CardsFooter />
       </>
