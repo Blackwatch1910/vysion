@@ -43,6 +43,9 @@ import {
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import CardsFooter from "components/Footers/CardsFooter.js";
 import Expertise from 'components/Expertise';
+import TextEffects from 'components/TextEffect';
+import Execution from 'components/Execution';
+import Stack from 'components/Stack';
 
 // index page sections
 //import Download from "../IndexSections/Download.js";
@@ -61,6 +64,11 @@ const items = [
     header: ''
   }
 ];
+
+const cardStyle = {
+  borderRadius: '20px',
+  boxShadow: '0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23)'
+}
 
 class Landing extends React.Component {
   state = {};
@@ -90,7 +98,7 @@ class Landing extends React.Component {
                         <span>Technologies</span>
                       </h1>
                       <p className="lead text-white">
-                        We help you to
+                        We help you to<TextEffects />
                       </p>
                       <div className="btn-wrapper">
                         <Button
@@ -486,6 +494,7 @@ class Landing extends React.Component {
               </svg>
             </div>
           </section>
+          {/* Products here */}
           <section className="section section-lg">
             <Container>
               <Row className="row-grid align-items-center">
@@ -500,11 +509,15 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
+          {/* Execution PROCESS */}
+          <Execution />
+          <Stack />
+          {/* OUR CLIENTS */}
           <section className="section section-lg">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
-                  <h2 className="display-3">The amazing Team</h2>
+                  <h2 className="display-3">Our Clients</h2>
                   <p className="lead text-muted">
                     According to the National Oceanic and Atmospheric
                     Administration, Ted, Scambos, NSIDClead scentist, puts the
@@ -518,13 +531,13 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={require("assets/img/theme/team-1-800x800.jpg")}
+                      src="https://i.pinimg.com/originals/1c/aa/03/1caa032c47f63d50902b9d34492e1303.jpg"
                       style={{ width: "200px" }}
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
-                        <span className="d-block mb-1">Ryan Tompson</span>
-                        <small className="h6 text-muted">Web Developer</small>
+                        <span className="d-block mb-1">Apple</span>
+                        <small className="h6 text-muted">Chutiya company</small>
                       </h5>
                       <div className="mt-3">
                         <Button
@@ -560,12 +573,12 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={require("assets/img/theme/team-2-800x800.jpg")}
+                      src="https://blog.hubspot.com/hubfs/image8-2.jpg"
                       style={{ width: "200px" }}
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
-                        <span className="d-block mb-1">Romina Hadid</span>
+                        <span className="d-block mb-1">Google</span>
                         <small className="h6 text-muted">
                           Marketing Strategist
                         </small>
@@ -604,12 +617,12 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={require("assets/img/theme/team-3-800x800.jpg")}
+                      src="https://lofrev.net/wp-content/photos/2016/06/amazon-logo-1.png"
                       style={{ width: "200px" }}
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
-                        <span className="d-block mb-1">Alexander Smith</span>
+                        <span className="d-block mb-1">Amazon</span>
                         <small className="h6 text-muted">UI/UX Designer</small>
                       </h5>
                       <div className="mt-3">
@@ -646,12 +659,12 @@ class Landing extends React.Component {
                     <img
                       alt="..."
                       className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                      src={require("assets/img/theme/team-4-800x800.jpg")}
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png"
                       style={{ width: "200px" }}
                     />
                     <div className="pt-4 text-center">
                       <h5 className="title">
-                        <span className="d-block mb-1">John Doe</span>
+                        <span className="d-block mb-1">Facebook</span>
                         <small className="h6 text-muted">Founder and CEO</small>
                       </h5>
                       <div className="mt-3">
@@ -686,37 +699,7 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-          <section className="section section-lg pt-0">
-            {/* <Container>
-              <Card className="bg-gradient-warning shadow-lg border-0">
-                <div className="p-5">
-                  <Row className="align-items-center">
-                    <Col lg="8">
-                      <h3 className="text-white">
-                        We made website building easier for you.
-                      </h3>
-                      <p className="lead text-white mt-3">
-                        I will be the leader of a company that ends up being
-                        worth billions of dollars, because I got the answers. I
-                        understand culture.
-                      </p>
-                    </Col>
-                    <Col className="ml-lg-auto" lg="3">
-                      <Button
-                        block
-                        className="btn-white"
-                        color="default"
-                        href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
-                        size="lg"
-                      >
-                        Download React
-                      </Button>
-                    </Col>
-                  </Row>
-                </div>
-              </Card>
-            </Container> */}
-          </section>
+          
           <section className="section section-lg bg-gradient-default">
             <Container className="pt-lg pb-300">
               <Row className="text-center justify-content-center">
@@ -859,10 +842,10 @@ class Landing extends React.Component {
           <br />
           <h1 className="text-center">Read our amazing blogs</h1>
           <br />
-          <Container>
+          <Container className="themed-container" fluid={true}>
             <Row>
               <Col className="col-sm">
-                <Card>
+                <Card style={cardStyle} className="card-lift--hover">
                   <CardImg top width="100%" src={require("assets/img/icons/common/google.svg")} alt="Card image cap" />
                   <CardBody>
                     <CardTitle>Card title</CardTitle>
@@ -873,7 +856,7 @@ class Landing extends React.Component {
                 </Card>
               </Col>
               <Col className="col-sm">
-                <Card>
+                <Card style={cardStyle} className="card-lift--hover">
                   <CardImg top width="100%" src={require("assets/img/icons/common/google.svg")} alt="Card image cap" />
                   <CardBody>
                     <CardTitle>Card title</CardTitle>
@@ -884,7 +867,7 @@ class Landing extends React.Component {
                 </Card>
               </Col>
               <Col className="col-sm">
-                <Card>
+                <Card style={cardStyle} className="card-lift--hover">
                   <CardImg top width="100%" src={require("assets/img/icons/common/google.svg")} alt="Card image cap" />
                   <CardBody>
                     <CardTitle>Card title</CardTitle>
