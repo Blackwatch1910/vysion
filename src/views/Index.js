@@ -22,7 +22,7 @@ import { Container, Row } from "reactstrap";
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+//import SimpleFooter from "components/Footers/SimpleFooter.js";
 
 // index page sections
 import Hero from "./IndexSections/Hero.js";
@@ -45,6 +45,7 @@ import Carousel from "./IndexSections/Carousel.js";
 import Icons from "./IndexSections/Icons.js";
 import Login from "./IndexSections/Login.js";
 import Download from "./IndexSections/Download.js";
+import CardsFooter from "components/Footers/CardsFooter.js";
 
 class Index extends React.Component {
   componentDidMount() {
@@ -91,7 +92,7 @@ class Index extends React.Component {
           <Login />
           <Download />
         </main>
-        <SimpleFooter />
+        <CardsFooter />
       </>
     );
   }
