@@ -43,7 +43,7 @@ import {
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import CardsFooter from "components/Footers/CardsFooter.js";
 import Expertise from 'components/Expertise';
-import TextEffects from 'components/TextEffect';
+//import TextEffects from 'components/TextEffect';
 import Execution from 'components/Execution';
 import Stack from 'components/Stack';
 
@@ -103,7 +103,7 @@ class Landing extends React.Component {
         <main ref="main">
           <div className="position-relative">
             {/* shape Hero */}
-            <section className="section section-lg section-shaped pb-250">
+            <section className="section section-lg section-shaped pt-200 pb-300">
               <div className="shape shape-style-1 shape-dark">
                 <img alt="background" width="100%" height="100%" src={require("assets/img/theme/back.jpg")} />
               </div>
@@ -323,7 +323,7 @@ class Landing extends React.Component {
               </Row>
               <Row className="row-grid align-items-center">
                 <Col className="order-lg-2 ml-lg-auto">
-                  <UncontrolledCarousel width="100%" height="100%" items={items} />
+                  <div className="d-block w-100"><UncontrolledCarousel width="100%" height="100%" items={items} /></div>
                 </Col>
               </Row>
             </Container>

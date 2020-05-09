@@ -35,8 +35,11 @@ import {
 } from "reactstrap";
 
 const styles = {
-  container:{ backgroundColor : '#172b4d' },
-  content: { color: '#f6f9fc' }
+  container:{ backgroundColor : '#172b4d',
+              paddingTop: '10rem',
+              marginTop: '10rem' },
+  content: { color: '#f6f9fc',
+              listStyleType: 'circle' }
 }
 
 
@@ -47,63 +50,39 @@ class CardsFooter extends React.Component {
 
     return (
       <>
-        <footer className="footer has-cards">
-          <Container className="container-lg" style={styles.container}>
+          <hr />
+        <footer style={styles.container}>
+          <Container className="container-lg">
             <Row>
               <Col className="mb-5 mb-md-0" md="4">
                 <h3 style={styles.content}>Company</h3>
+                <ol style={styles.content}>
+                  <li>Our Team</li>
+                  <li>About Us</li>
+                  <li>Testimonial</li>
+                  <li>Career</li>
+                </ol>
               </Col>
               <Col className="mb-5 mb-lg-0" md="4">
                 <h3 style={styles.content}>Services</h3>
+                <ol style={styles.content}>
+                  <li>IoT Development</li>
+                  <li>Application Development</li>
+                  <li>Web Development</li>
+                  <li>System Development</li>
+                </ol>
               </Col>
               <Col className="mb-5 mb-lg-0" md="4">
                 <h3 style={styles.content}>Our Resources</h3>
+                <ol style={styles.content}>
+                  <li>Blogs</li>
+                  <li>E-books</li>
+                  <li>Publications</li>
+                  <li>FAQs</li>
+                </ol>
               </Col>
             </Row>
-            <Row>
-              <Col className="mb-5 mb-md-0" md="4">
-                <h6 style={styles.content}>Our Team</h6>
-              </Col>
-              <Col className="mb-5 mb-lg-0" md="4">
-                <h6 style={styles.content}>IoT Development</h6>
-              </Col>
-              <Col className="mb-5 mb-lg-0" md="4">
-                <h6 style={styles.content}>Blogs</h6>
-              </Col>
-            </Row>
-            <Row>
-              <Col className="mb-5 mb-md-0" md="4">
-                <h6 style={styles.content}>About Us</h6>
-              </Col>
-              <Col className="mb-5 mb-lg-0" md="4">
-                <h6 style={styles.content}>Mobile App Development</h6>
-              </Col>
-              <Col className="mb-5 mb-lg-0" md="4">
-                <h6 style={styles.content}>Portfolio</h6>
-              </Col>
-            </Row>
-            <Row>
-              <Col className="mb-5 mb-md-0" md="4">
-                <h6 style={styles.content}>Testimonial</h6>
-              </Col>
-              <Col className="mb-5 mb-lg-0" md="4">
-                <h6 style={styles.content}>Web Development</h6>
-              </Col>
-              <Col className="mb-5 mb-lg-0" md="4">
-                <h6 style={styles.content}>E-books</h6>
-              </Col>
-            </Row>
-            <Row>
-              <Col className="mb-5 mb-md-0" md="4">
-                <h6 style={styles.content}>Career</h6>
-              </Col>
-              <Col className="mb-5 mb-lg-0" md="4">
-                <h6 style={styles.content}>Artificial Intelligence</h6>
-              </Col>
-              <Col className="mb-5 mb-lg-0" md="4">
-                <h6 className="blur-item" style={styles.content}>Case Studies</h6>
-              </Col>
-            </Row>
+            
           </Container>
           <Container>
             <Row className="row-grid align-items-center my-md">
@@ -111,7 +90,7 @@ class CardsFooter extends React.Component {
                 <h3 className="text-primary font-weight-light mb-2">
                   Thank you for supporting us!
                 </h3>
-                <h4 className="mb-0 font-weight-light">
+                <h4 style={styles.content} className="mb-0 font-weight-light">
                   Let's get in touch on any of these platforms.
                 </h4>
               </Col>
