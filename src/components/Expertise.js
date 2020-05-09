@@ -6,16 +6,8 @@ import {
 
 class Expertise extends React.Component {
     constructor() {
-        super()
-        this.state = {
-            mouse: 0,
-        }
-    }
-
-    handleMouseEnter = (e) => {
-        this.setState({
-            mouse: e.target - 10,
-        });
+        super();
+        this.state = {hovered: false};
     }
 
     render() {
@@ -26,65 +18,65 @@ class Expertise extends React.Component {
 
                 <Container>
                     <Row>
-                        <Col onMouseEnter={this.handleMouseEnter} className="bg-docs-transparent-grid rounded p-3 my-2" xs="4">
+                        <Col className="bg-docs-transparent-grid rounded p-3 my-2 shadow--hover" xs="4">
                             <Toast>
                                 <ToastHeader>
-                                    Application development
+                                    Mobile Application development
                                 </ToastHeader>
                                 <ToastBody>
-                                    This is App development description!
+                                    <img width='100%' height='100%' src="https://images.assetsdelivery.com/compings_v2/vectorgalaxy/vectorgalaxy1808/vectorgalaxy180810621.jpg" alt="Embedded Systems" />
                                 </ToastBody>
                             </Toast>
                         </Col>
-                        <Col className="bg-docs-transparent-grid rounded p-3 my-2" xs="4">
+                        <Col className="bg-docs-transparent-grid rounded p-3 my-2 shadow--hover" xs="4">
                             <Toast>
                                 <ToastHeader>
-                                    Application development
+                                    Embedded System Devices
                                 </ToastHeader>
                                 <ToastBody>
-                                    This is App development description!
+                                    <img width='100%' height='100%' src="https://us.123rf.com/450wm/antonshaparenko/antonshaparenko1810/antonshaparenko181000030/109075337-stock-vector-embedded-system-icon-simple-style-design-from-industry-4-0-collection-ux-and-ui-pixel-perfect-premiu.jpg?ver=6" alt="Embedded Systems" />
                                 </ToastBody>
                             </Toast>
                         </Col>
-                        <Col className="bg-docs-transparent-grid rounded p-3 my-2" xs="4">
+                        <Col className="bg-docs-transparent-grid rounded p-3 my-2 shadow--hover" xs="4">
                             <Toast>
                                 <ToastHeader>
-                                    Application development
+                                    Arificial Intelligence/Machine learning
                                 </ToastHeader>
                                 <ToastBody>
-                                    This is App development description!
+                                    <img width='100%' height='100%' src="https://images.assetsdelivery.com/compings_v2/nexusby/nexusby1806/nexusby180600221.jpg" alt="Embedded Systems" />
                                 </ToastBody>
                             </Toast>
                         </Col>
                     </Row>
                     <Row>
-                        <Col className="bg-docs-transparent-grid rounded p-3 my-2" xs="4">
+                        <Col className="bg-docs-transparent-grid rounded p-3 my-2 shadow--hover" xs="4">
                             <Toast>
                                 <ToastHeader>
-                                    Web development
+                                    Data Science
                                 </ToastHeader>
                                 <ToastBody>
-                                    This is Web development description!
+                                    <img width='100%' height='100%' src="https://images.assetsdelivery.com/compings_v2/grgroup/grgroup1709/grgroup170900870.jpg" alt="Embedded Systems" />
                                 </ToastBody>
                             </Toast>
                         </Col>
-                        <Col className="bg-docs-transparent-grid rounded p-3 my-2" xs="4">
+                        <Col className="bg-docs-transparent-grid rounded p-3 my-2 shadow--hover" xs="4">
                             <Toast>
                                 <ToastHeader>
-                                    Web development
+                                    Desktop Application development
                                 </ToastHeader>
                                 <ToastBody>
-                                    This is Web development description!
+                                    <img width='100%' height='100%' src="https://images.assetsdelivery.com/compings_v2/ahasoft2000/ahasoft20001603/ahasoft2000160303412.jpg" alt="Embedded Systems" />
                                 </ToastBody>
                             </Toast>
                         </Col>
-                        <Col className="bg-docs-transparent-grid rounded p-3 my-2" xs="4">
+                        <Col className="bg-docs-transparent-grid rounded p-3 my-2 shadow--hover" xs="4">
                             <Toast>
                                 <ToastHeader>
-                                    Web development
+                                    Web Application development
                                 </ToastHeader>
                                 <ToastBody>
-                                    This is Web development description!
+                                    <img width='100%' height='100%' src="https://images.assetsdelivery.com/compings_v2/coolvectorstock/coolvectorstock1811/coolvectorstock181106837.jpg" alt="Embedded Systems" />
                                 </ToastBody>
                             </Toast>
                         </Col>

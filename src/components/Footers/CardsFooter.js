@@ -34,48 +34,74 @@ import {
   UncontrolledCarousel
 } from "reactstrap";
 
-const items = [
-  {
-    src: require("assets/img/brand/vysion.jpeg"),
-    altText: '',
-    caption: '',
-    header: ''
-  },
-  {
-    src: require("assets/img/brand/vysion.jpeg"),
-    altText: '',
-    caption: '',
-    header: ''
-  }
-];
+const styles = {
+  container:{ backgroundColor : '#172b4d' },
+  content: { color: '#f6f9fc' }
+}
+
+
 
 class CardsFooter extends React.Component {
+
   render() {
 
     return (
       <>
         <footer className="footer has-cards">
-          <Container className="container-lg">
+          <Container className="container-lg" style={styles.container}>
             <Row>
-              <Col className="mb-5 mb-md-0" md="6">
-                <Card className="card-lift--hover shadow border-0">
-                  <Link to="/landing-page">
-                    <CardImg
-                      alt="..."
-                      src={require("assets/img/theme/landing.jpg")}
-                    />
-                  </Link>
-                </Card>
+              <Col className="mb-5 mb-md-0" md="4">
+                <h3 style={styles.content}>Company</h3>
               </Col>
-              <Col className="mb-5 mb-lg-0" md="6">
-                <Card className="card-lift--hover shadow border-0">
-                  <Link to="/profile-page">
-                    <CardImg
-                      alt="..."
-                      src={require("assets/img/theme/profile.jpg")}
-                    />
-                  </Link>
-                </Card>
+              <Col className="mb-5 mb-lg-0" md="4">
+                <h3 style={styles.content}>Services</h3>
+              </Col>
+              <Col className="mb-5 mb-lg-0" md="4">
+                <h3 style={styles.content}>Our Resources</h3>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="mb-5 mb-md-0" md="4">
+                <h6 style={styles.content}>Our Team</h6>
+              </Col>
+              <Col className="mb-5 mb-lg-0" md="4">
+                <h6 style={styles.content}>IoT Development</h6>
+              </Col>
+              <Col className="mb-5 mb-lg-0" md="4">
+                <h6 style={styles.content}>Blogs</h6>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="mb-5 mb-md-0" md="4">
+                <h6 style={styles.content}>About Us</h6>
+              </Col>
+              <Col className="mb-5 mb-lg-0" md="4">
+                <h6 style={styles.content}>Mobile App Development</h6>
+              </Col>
+              <Col className="mb-5 mb-lg-0" md="4">
+                <h6 style={styles.content}>Portfolio</h6>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="mb-5 mb-md-0" md="4">
+                <h6 style={styles.content}>Testimonial</h6>
+              </Col>
+              <Col className="mb-5 mb-lg-0" md="4">
+                <h6 style={styles.content}>Web Development</h6>
+              </Col>
+              <Col className="mb-5 mb-lg-0" md="4">
+                <h6 style={styles.content}>E-books</h6>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="mb-5 mb-md-0" md="4">
+                <h6 style={styles.content}>Career</h6>
+              </Col>
+              <Col className="mb-5 mb-lg-0" md="4">
+                <h6 style={styles.content}>Artificial Intelligence</h6>
+              </Col>
+              <Col className="mb-5 mb-lg-0" md="4">
+                <h6 className="blur-item" style={styles.content}>Case Studies</h6>
               </Col>
             </Row>
           </Container>
